@@ -1,10 +1,10 @@
-import React from 'react'
-import { useState } from 'react'
-import QRCode from 'qrcode'
+import React from 'react';
+import { useState } from 'react';
+import QRCode from 'qrcode';
 
 export default function Input() {
-    const [url, setUrl] = useState('')
-	const [qr, setQr] = useState('')
+    	const [url, setUrl] = useState('');
+	const [qr, setQr] = useState('');
 
 	const GenerateQRCode = () => {
 		QRCode.toDataURL(url, {
@@ -20,7 +20,7 @@ export default function Input() {
 			console.log(url)
 			setQr(url)
 		})
-	}
+	};
 
 	return (
 		<div className="app">
@@ -36,5 +36,5 @@ export default function Input() {
 				<a href={qr} download="qrcode.png">Download</a>
 			</>}
 		</div>
-	)
+	);
 }
