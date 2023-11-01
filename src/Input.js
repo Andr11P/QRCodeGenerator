@@ -6,7 +6,7 @@ export default function Input() {
     	const [url, setUrl] = useState('');
 	const [qr, setQr] = useState('');
 
-	// generating qrcode with size and color if qrcode can't be generated it returns error
+	// generating qrcode with size and color, if qrcode can't be generated it returns error
 	const GenerateQRCode = () => {
 		QRCode.toDataURL(url, {
 			width: 800,
