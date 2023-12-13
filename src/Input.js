@@ -6,7 +6,7 @@ export default function Input() {
     	const [url, setUrl] = useState('');
 	const [qr, setQr] = useState('');
 
-	// generating qrcode with size and color, if qrcode can't be generated it returns error
+	// generating qrcode with size and color
 	const GenerateQRCode = () => {
 		QRCode.toDataURL(url, {
 			width: 800,
@@ -16,16 +16,15 @@ export default function Input() {
 				light: '#EEEEEEFF'
 			}
 		}, (err, url) => {
+			// otherwise will be an error
 			if (err) return console.error(err)
 
 			console.log(url)
 			setQr(url)
 		})
 	};
-
 	// returns physical qrcode to download and to see a preview
 	return (
-		
 		<div className="app">
 			<h1>QR Generator</h1>
 			<input 
@@ -39,7 +38,6 @@ export default function Input() {
 				<img src={qr} />
 				<a href={qr} download="qrcode.png">Download</a>
 			</>}
-		</div>
-			 
+		</div>	 
 	);
 }
