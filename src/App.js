@@ -2,7 +2,7 @@ import Input from "./Input";
 
 function App() {
   return (
-    <Input />
+    <QR />
   );
 }
 
