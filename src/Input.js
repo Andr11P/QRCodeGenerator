@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import QRCode from 'qrcode';
 
-export default function Input() {
+export default function QR() {
     	const [url, setUrl] = useState('');
 	const [qr, setQr] = useState('');
 
