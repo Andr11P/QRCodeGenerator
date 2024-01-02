@@ -1,3 +1,4 @@
+## THE WEBSITE HAS BEEN DEPLOYED JANUARY 1 2024, LINK-https://fir-project-79aaf.web.app/
 ## Available Scripts
 
 In the project directory, you can run:
