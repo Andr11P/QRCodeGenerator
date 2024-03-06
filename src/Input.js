@@ -17,10 +17,10 @@ export default function QR() {
 			}
 		}, (err, url) => {
 			// otherwise will be an error
-			if (err) return console.error(err)
+			if (err) return console.error(err);
 
-			console.log(url)
-			setQr(url)
+			console.log(url);
+			setQr(url);
 		})
 	};
 	// returns physical qrcode to download and to see a preview
